@@ -1,8 +1,6 @@
 # LLaMA: Open and Efficient Foundation Language Models
 
-- **原文**：[arXiv:2302.13971v1](https://arxiv.org/abs/2302.13971)（cs.CL，2023-02-27），PDF 27 页；本仓库同目录 `2302.13971v1.pdf` / `2302.13971v1_中英对照.md`
-- **代码 / 项目**：权重与推理代码 <https://github.com/facebookresearch/llama>（**训练代码未公开**）；社区实现：`llama.cpp`、HF `transformers` 的 `LlamaForCausalLM`、Meta 后续 `llama-recipes`
-- **作者与机构**：Hugo Touvron\*, Thibaut Lavril\*, Gautier Izacard\*, Xavier Martinet, Marie-Anne Lachaux, Timothée Lacroix, Baptiste Rozière, Naman Goyal, Eric Hambro, Faisal Azhar, Aurelien Rodriguez, Armand Joulin, Edouard Grave\*, Guillaume Lample\*（\* 同等贡献）— **Meta AI / FAIR**
+- **原文**：[arXiv:2302.13971v1](https://arxiv.org/abs/2302.13971)（2023-02-27）
 - **发表信息**：arXiv preprint v1，2023 年 2 月；未经同行评审；LLaMA-1 权重以**非商业研究许可**发布
 - **一句话总结**：只用公开数据、把数据量堆到"参数量的 100~150 倍"（7B 训 1T token），换来一个**推理便宜、可在单卡跑**的模型家族——13B 在多数基准上超过 175B 的 GPT-3，65B 与 Chinchilla-70B / PaLM-540B 打平。
 - **前置阅读**：Transformer（Vaswani 2017）→ GPT-3（Brown 2020）→ Kaplan 缩放定律（2020）→ **Chinchilla**（Hoffmann 2022，本文的直接对手）→ PaLM（Chowdhery 2022）；组件级：RMSNorm（Zhang & Sennrich 2019）、SwiGLU（Shazeer 2020）、**RoPE**（Su 2021）、SentencePiece/BPE、CCNet（Wenzek 2020）、memory-efficient attention（Rabe & Staats 2021 / FlashAttention, Dao 2022）
